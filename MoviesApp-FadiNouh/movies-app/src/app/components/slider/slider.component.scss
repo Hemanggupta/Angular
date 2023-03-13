@@ -1,0 +1,62 @@
+@import '../../../styles/colors';
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 35rem;
+  position: relative;
+  .slide {
+    position: relative;
+    height: 35rem;
+    display: flex;
+    &-bg {
+      position: relative;
+      display: flex;
+      flex: 1 1 auto;
+      &::after {
+        position: absolute;
+        inset: 0;
+        display: block;
+        content: '';
+        background-image: linear-gradient(
+          to right,
+          #000 0,
+          transparent 75%,
+          transparent 100%
+        );
+      }
+      &-image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    &-pane {
+      position: absolute;
+      width: 45%;
+      top: 5rem;
+      left: 5rem;
+      .name {
+        font-size: 2.8rem;
+      }
+
+      .meta {
+        font-size: 1.4rem;
+        color: $lightGray;
+
+        .info {
+          .reviews::after {
+            content: '|';
+            margin-right: 9px;
+            margin-left: 9px;
+          }
+          .reviews::before {
+            content: '|';
+            margin-right: 9px;
+            margin-left: 9px;
+          }
+        }
+      }
+    }
+  }
+}
