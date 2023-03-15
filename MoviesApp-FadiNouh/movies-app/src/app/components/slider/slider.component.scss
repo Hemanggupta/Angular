@@ -43,8 +43,23 @@
       .meta {
         font-size: 1.4rem;
         color: $lightGray;
+        margin-bottom: 1rem;
 
         .info {
+          display: flex;
+          align-items: center;
+          .rating {
+            display: flex;
+            align-items: center;
+            &-value {
+              color: $white;
+            }
+          }
+          .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 200, 'opsz' 40;
+            color: #d4af37;
+            margin-right: 5px;
+          }
           .reviews::after {
             content: '|';
             margin-right: 9px;
