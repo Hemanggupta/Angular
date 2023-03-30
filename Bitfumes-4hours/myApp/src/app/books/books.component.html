@@ -1,6 +1,22 @@
-<h2>Programming books lists</h2>
+<h2 class="ms-3">Book lists:</h2>
+<button class="btn btn-danger px-3 ms-3" (click)="isHidden = !isHidden">
+  <ng-container *ngIf="isHidden"> Hide </ng-container>
+  <ng-container *ngIf="!isHidden"> Show </ng-container>
+</button>
 
-<ul>
-  <li>{{ name }}</li>
-  <li>{{ author }}</li>
+<br />
+<!-- <input type="text" placeholder="Enter book name"
+  [(ngModel)]="searchText"
+/>
+<input
+  type="text"
+  [value]="searchText"
+  placeholder="double binded text"
+  disabled
+/> -->
+<ul *ngIf="isHidden">
+  <ng-container *ngFor="let singleBook of books; let i = index">
+    <app-book [book]="singleBook" [numIndex]="i"></app-book>
+    <!-- (emitBook)="addToCart($event)" -->
+  </ng-container>
 </ul>
