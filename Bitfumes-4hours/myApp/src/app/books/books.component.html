@@ -1,7 +1,7 @@
 <h2 class="ms-3">Book lists:</h2>
-<button class="btn btn-danger px-3 ms-3" (click)="isHidden = !isHidden">
-  <ng-container *ngIf="isHidden"> Hide </ng-container>
+<button class="btn btn-{{ btnClass }} px-3 ms-3" (click)="isDisabled()">
   <ng-container *ngIf="!isHidden"> Show </ng-container>
+  <ng-container *ngIf="isHidden"> Hide </ng-container>
 </button>
 
 <br />

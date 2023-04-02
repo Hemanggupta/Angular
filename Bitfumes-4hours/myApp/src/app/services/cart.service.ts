@@ -21,7 +21,6 @@ export class CartService {
   }
   remove(book: Book) {
     this.index = this.cart.indexOf(book);
-    console.log(this.index);
     this.cart.splice(this.index, 1);
   }
 }

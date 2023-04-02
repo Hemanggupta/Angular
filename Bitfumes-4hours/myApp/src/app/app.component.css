@@ -1,4 +1,7 @@
 a {
   display: inline-block;
-  margin: 1rem;
+  margin: 1rem 0;
+}
+.container div a:first-child {
+  margin-right: 1rem;
 }

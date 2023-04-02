@@ -24,15 +24,18 @@ export class BookComponent {
 
   addToCart() {
     this.isInCart = true;
+    // console.log(this.book);
     this.cartServices.add(this.book);
     // this.emitBook.emit(this.book);
   }
   removeFromCart() {
     this.isInCart = false;
+    // console.log(this.book);
     this.cartServices.remove(this.book);
   }
 
   myInterval: any;
+
   // ngOnInit(): void {
   //   this.myInterval = setInterval(() => {
   //     console.log('Hello');
