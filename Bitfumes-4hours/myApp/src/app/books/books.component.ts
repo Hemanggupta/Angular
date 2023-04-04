@@ -20,14 +20,14 @@ export class BooksComponent implements OnInit {
   isHidden = true;
   searchText = '';
   btnClass: string = 'danger';
-  isDisabled() {
-    this.isHidden = !this.isHidden;
-    if (this.isHidden) {
-      this.btnClass = 'danger';
-    } else {
-      this.btnClass = 'success';
-    }
-  }
+  // isDisabled() {
+  //   this.isHidden = !this.isHidden;
+  //   // if (this.isHidden) {
+  //   //   this.btnClass = 'danger';
+  //   // } else {
+  //   //   this.btnClass = 'success';
+  //   // }
+  // }
 
   // addToCart(book: Book) {
   //   console.log(book);
