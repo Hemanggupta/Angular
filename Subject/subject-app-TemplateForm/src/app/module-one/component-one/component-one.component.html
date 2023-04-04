@@ -1,0 +1,40 @@
+<div class="bg-primary-subtle p-5">
+  <h3>Component from M1</h3>
+  <form (ngSubmit)="onSubmit([fName, lName])">
+    <!-- [formGroup]="reactiveForm1" -->
+    <div class="row">
+      <div class="col-6">
+        <div class="mb-3">
+          <label for="comp1M1firstName" class="form-label">First Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="comp1M1firstName"
+            aria-describedby="fNameHelp"
+            name="firstName"
+            [(ngModel)]="fName"
+          />
+          <!-- formControlName="comp1fName" -->
+
+          <!-- [(ngModel)]="inputVal" //coz inputVal="" is defined -->
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="mb-3">
+          <label for="comp1M1lastName" class="form-label">Last Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="comp1M1lastName"
+            aria-describedby="emailHelp"
+            [(ngModel)]="lName"
+            name="lastName"
+          />
+          <!-- formControlName="comp1lName" -->
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
