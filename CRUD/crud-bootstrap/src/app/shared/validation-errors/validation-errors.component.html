@@ -1,0 +1,6 @@
+<div
+  class="text-danger"
+  *ngFor="let errorMessage of listErrors(); let last = last"
+>
+  {{ last ? errorMessage : "" }}
+</div>

@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "Users": [
+    {
+      "id": 1,
+      "title": "Mr",
+      "firstName": "Hemang",
+      "lastName": "Gupta",
+      "email": "hemang@gmail.com",
+      "dob": "2000-08-26",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "acceptTerms": true
+    },
+    {
+      "id": 2,
+      "title": "Mr",
+      "firstName": "Rachit",
+      "lastName": "Parasar",
+      "email": "rachit@gmail.com",
+      "dob": "2023-04-08",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "acceptTerms": true
+    },
+    {
+      "id": 3,
+      "title": "Miss",
+      "firstName": "Sayak",
+      "lastName": "Deb",
+      "email": "sayak@miss.com",
+      "dob": "2023-03-30",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "acceptTerms": true
+    }
+  ]
+}
