@@ -18,17 +18,6 @@
   },
   "Users": [
     {
-      "id": 1,
-      "title": "Mr",
-      "firstName": "Hemang",
-      "lastName": "Gupta",
-      "email": "hemang@gmail.com",
-      "dob": "2000-08-26",
-      "password": "12345",
-      "confirmPassword": "12345",
-      "acceptTerms": true
-    },
-    {
       "id": 2,
       "title": "Mr",
       "firstName": "Rachit",
@@ -48,6 +37,17 @@
       "dob": "2023-03-30",
       "password": "12345",
       "confirmPassword": "12345",
+      "acceptTerms": true
+    },
+    {
+      "id": 4,
+      "title": "Mr",
+      "firstName": "hrtht",
+      "lastName": "hrthrth",
+      "email": "jhguhg@gh.com",
+      "dob": "1212-02-21",
+      "password": "3213123",
+      "confirmPassword": "23123123123",
       "acceptTerms": true
     }
   ]

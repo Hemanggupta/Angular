@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
   registerForm: FormGroup = new FormGroup({});
   users: any = [];
   submitted = false;
+  showField = false;
   btnTextDecider = true; //to update button text
   dbops: DbOperations = 1;
   constructor(
@@ -82,9 +83,10 @@ export class AppComponent implements OnInit {
     this.submitted = true;
     // console.log(this.registerForm.value);
     if (this.registerForm.invalid) {
+      console.log('invalid');
       return;
     } else {
-      // console.log(this.registerForm.value);
+      //      console.log(this.registerForm.value);
       switch (this.dbops) {
         case DbOperations.create:
           this._crudService
@@ -105,6 +107,7 @@ export class AppComponent implements OnInit {
             });
           break;
       }
+      console.log(this.registerForm);
     }
   }
   onCancel() {

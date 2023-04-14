@@ -1,7 +1,8 @@
 <div class="card m-0">
   <h5 class="class-header bg-primary text-white p-2">User Registration</h5>
   <div class="card-body">
-    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <form [formGroup]="registerForm">
+      <!-- (ngSubmit)="onSubmit()" -->
       <div class="row">
         <div class="form-group col-2">
           <label>Title</label>
@@ -58,7 +59,7 @@
           />
           <errors-component [controlName]="f['lastName']"> </errors-component>
         </div>
-        <div class="form-group col">
+        <div class="form-group col" *ngIf="false">
           <label>Email</label>
           <input
             type="email"
@@ -114,7 +115,11 @@
       </div>
       <div class="row my-3">
         <div class="form-group text-center">
-          <button type="submit" class="btn btn-success me-1">
+          <button
+            type="submit"
+            class="btn btn-success me-1"
+            (click)="onSubmit()"
+          >
             {{ btnTextDecider ? "Submit" : "Update" }}
           </button>
           <button type="button" class="btn btn-danger" (click)="onCancel()">
