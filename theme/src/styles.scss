@@ -1,0 +1,25 @@
+:root {
+  .dark {
+    --theme-color-1: #f7f7f7;
+    --theme-color-2: #ec4d3b;
+    --theme-color-3: #ffc107;
+    --theme-color-4: #686250;
+
+    --primary-color: #000000;
+
+    --font-weight: 300;
+  }
+  .light {
+    --theme-color-1: #ec4d3b;
+    --theme-color-2: #ffc107;
+    --theme-color-3: #686250;
+    --theme-color-4: #ffc107;
+
+    --primary-color: #ffffff;
+
+    --font-weight: 300;
+  }
+}
+body {
+  background-color: var(--primary-color);
+}
