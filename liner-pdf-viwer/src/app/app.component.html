@@ -1,0 +1,5 @@
+<div class="container">
+  <div class="pdf-container" *ngFor="let pdf of pdfList">
+    <ng2-pdfjs-viewer [pdfSrc]="pdf.src" [viewerId]="pdf.viewerId" (onPageChange)="onPageChange(pdf.viewerId, $event)"></ng2-pdfjs-viewer>
+  </div>
+</div>
